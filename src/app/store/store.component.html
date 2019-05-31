@@ -1,0 +1,15 @@
+<p>
+  store works!
+</p>
+<table>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Logo</th>
+  <tr *ngFor="let store of stores">
+    <td>{{store.id}}</td>
+    <td>{{store.name}}</td>
+    <td>{{store.description}}</td>
+    <td><img [src]="store.logo" alt="Store Logo"></td>
+  </tr>
+</table>
